@@ -1,9 +1,9 @@
 import text from "../../utils/text.json";
-import {useState} from "react";
+// import {useState} from "react";
 import "./Header.scss"
 
 const Header = () => {
-    const [carts, setCarts] = useState(0);
+    // const [carts, setCarts] = useState(0);
 
     const listInfo =  text["header-nav-list"];
     const listInfoAdditional =  text["header-nav-list-additional"];
@@ -32,7 +32,7 @@ const Header = () => {
                     {
                         listInfoAdditional.map((item, index) => (
                             <li key={index} className="list-item additional">
-                                <a className="list-item-link" href="">{item}{item === "cart" ? `(${carts})` : ""}</a>
+                                <a className="list-item-link" href="">{item}{item === "cart" ? `(${0})` : ""}</a>
                             </li>
                         ))
                     }

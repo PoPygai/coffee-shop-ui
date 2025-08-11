@@ -1,0 +1,57 @@
+
+.enjoy{
+  background: url("public/images/rev-png-4.png.png") no-repeat right/contain;
+  display: flex;
+  max-height: 941px;
+  column-gap: 7.6vw;
+
+  &-image{
+    max-width: 998px;
+    width: 50vw;
+    max-height: 980px;
+    
+
+  }
+  &-body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-grow: 1;
+
+    .enjoy-title{
+      position: relative;
+      font-size: clamp(24px,6.25vw,120px);
+      line-height: 1.08;
+      text-align: left;
+
+      &::after{
+        content: "";
+        position: absolute;
+        width: 7vw;
+        min-width: 39px;
+        aspect-ratio: 1;
+        background: url(/public/icons/natural_product.png)center/clamp(30px,7vw,136px) no-repeat;
+        top: -25%;
+        right: -15%;
+      }
+      &::before{
+        content: attr(data-title);
+        position: absolute;
+        bottom: -10%;
+        right: -15%;
+        font-size: clamp(10px , 2.6vw,50px);
+        transform: rotate(-10deg);
+        font-family: Mansalva, sans-serif;
+        text-transform: lowercase;
+      }
+    }
+
+  }
+  @media (max-width: 670px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 510px) {
+    padding-top: 100px;
+  }
+}
+
