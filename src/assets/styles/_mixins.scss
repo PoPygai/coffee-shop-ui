@@ -1,0 +1,7 @@
+@mixin text-tilt($tilt,$size){
+  font-size: $size;
+  transform: rotate($tilt);
+  position: absolute;
+  bottom: 0;
+  right: -25%;
+}
