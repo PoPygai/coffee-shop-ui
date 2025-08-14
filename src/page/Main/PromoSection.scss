@@ -1,15 +1,14 @@
-
 .enjoy{
-  background: url("public/images/rev-png-4.png.png") no-repeat right/contain;
+  background: url("public/images/rev-png-4.png.png") right/contain no-repeat ;
   display: flex;
-  max-height: 941px;
   column-gap: 7.6vw;
+  justify-content: center;
+  align-items: center;
 
   &-image{
     max-width: 998px;
     width: 50vw;
-    max-height: 980px;
-    
+
 
   }
   &-body{
@@ -55,3 +54,132 @@
   }
 }
 
+.product{
+  max-height:583px;
+  display: flex;
+  background-color: var(--alternative-bg-color);
+  border: var(--border);
+  column-gap:2.6vw;
+
+  &-info{
+    padding: clamp(10px,4.47vw,86px);
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .product-title{
+      font-size: clamp(12px,2.6vw,50px);
+      line-height: 1.2;
+      letter-spacing: 1px;
+      margin-bottom: 1.1vw;
+    }
+    .product-description{
+      font-family: SpaceMono,sans-serif;
+      font-size: clamp(8px,0.9vw,18px);
+      line-height: 1.33;
+      margin-bottom: 5.94vw;
+    }
+  }
+
+  .product-catalog{
+    .catalog-list{
+      display: flex;
+      height: 100%;
+
+
+      .catalog-item{
+        display: flex;
+        padding: 2.23vw;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        max-height:583px ;
+        height: 100%;
+        max-width: 480px;
+        border: var(--border);
+        border-top: none;
+        border-bottom: none;
+
+        &:first-child{
+          border-right: none !important;
+        }
+
+        &-img{
+          margin-inline:auto ;
+        }
+        &-title{
+          font-size: clamp(12px,1.3vw,25px);
+          line-height: 1.2;
+          letter-spacing: 0.5px;
+          margin-bottom: 5px;
+        }
+        &-cost{
+          font-family: SpaceMono,sans-serif;
+          font-size: clamp(10px,0.9vw,18px);
+          line-height: 1.33;
+        }
+
+
+      }
+    }
+  }
+
+
+}
+
+.alert{
+  height: 80vh; /* всегда динамическая — зависит от окна todo*/
+  background: url("/public/images/bg-alert.png")center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &-title{
+    font-size: clamp(35px,5.2vw,100px);
+    color: var(--color-light);
+
+  }
+}
+
+
+.quotes{
+  .quotes-body{
+
+    .quotes-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .quotes-item {
+      display: flex;
+    }
+
+    .quotes-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px;
+      background-color: transparent;
+      border: none;
+    }
+
+    .quotes-button::after {
+      content: '';
+      width: 10px;
+      aspect-ratio: 1;
+      border: var(--border);
+      border-radius: 50%;
+      transition-duration: var(--transition-duration);
+    }
+
+    .quotes-button.is-current::after {
+      background-color: var(--color-light);
+    }
+
+    .quotes-button:not(.is-current):hover::after {
+      border-color: var(--color-light-gray);
+    }
+  }
+}

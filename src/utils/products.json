@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "name" : "Arabica Bekele",
+      "img": "/public/images/products/arabica.png",
+      "cost": "40.00$"
+    },
+    {
+      "name" : "Robusta Santa",
+      "img": "/public/images/products/robusta.png",
+      "cost": "35.00$"
+    }
+  ]
+}
