@@ -8,6 +8,8 @@
   &-image{
     max-width: 998px;
     width: 50vw;
+    min-width: 200px;
+    min-height: 250px;
 
 
   }
@@ -19,17 +21,17 @@
 
     .enjoy-title{
       position: relative;
-      font-size: clamp(24px,6.25vw,120px);
+      font-size: clamp(30px,6.25vw,120px);
       line-height: 1.08;
       text-align: left;
 
       &::after{
         content: "";
         position: absolute;
-        width: 7vw;
-        min-width: 39px;
+        width: clamp(55px,7vw,136px);
+        min-width: 50px;
         aspect-ratio: 1;
-        background: url(/public/icons/natural_product.png)center/clamp(30px,7vw,136px) no-repeat;
+        background: url(/public/icons/natural_product.png)center/clamp(55px,7vw,136px) no-repeat;
         top: -25%;
         right: -15%;
       }
@@ -38,7 +40,7 @@
         position: absolute;
         bottom: -10%;
         right: -15%;
-        font-size: clamp(10px , 2.6vw,50px);
+        font-size: clamp(14px , 2.6vw,50px);
         transform: rotate(-10deg);
         font-family: Mansalva, sans-serif;
         text-transform: lowercase;
@@ -48,6 +50,13 @@
   }
   @media (max-width: 670px) {
     padding-top: 70px;
+
+    .enjoy-title{
+      &::after{
+        top: -43%;
+        right: -19%;
+      }
+    }
   }
   @media (max-width: 510px) {
     padding-top: 100px;
@@ -129,7 +138,9 @@
 }
 
 .alert{
-  height: 80vh; /* всегда динамическая — зависит от окна todo*/
+  max-height:753px;
+  height:45vw;
+  min-height:300px ;
   background: url("/public/images/bg-alert.png")center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -137,7 +148,7 @@
   text-align: center;
 
   &-title{
-    font-size: clamp(35px,5.2vw,100px);
+    font-size: clamp(30px,5.2vw,100px);
     color: var(--color-light);
 
   }
@@ -145,41 +156,65 @@
 
 
 .quotes{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
   .quotes-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.12vw;
+    padding: 10px;
 
+    .quotes-text{
+      font-size: clamp(12px,1.82vw,35px );
+      letter-spacing: 0.7px;
+      text-align: center;
+    }
+    .quotes-owners{
+      font-family: SpaceMono,sans-serif;
+      font-size: clamp(10px,0.93vw, 18px );
+      line-height: 1.33;
+    }
     .quotes-list {
       display: flex;
       justify-content: center;
-    }
 
-    .quotes-item {
-      display: flex;
-    }
+      .quotes-item {
+        display: flex;
 
-    .quotes-button {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      padding: 7px;
-      background-color: transparent;
-      border: none;
-    }
+        .quotes-button {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          padding: 7px;
+          background-color: transparent;
+          border: none;
+        }
 
-    .quotes-button::after {
-      content: '';
-      width: 10px;
-      aspect-ratio: 1;
-      border: var(--border);
-      border-radius: 50%;
-      transition-duration: var(--transition-duration);
-    }
+        .quotes-button::after {
+          content: '';
+          width: 0.52vw;
+          min-width: 5px;
+          aspect-ratio: 1;
+          border: 0.5px solid #202020;
+          transition-duration: var(--transition-duration);
+        }
 
-    .quotes-button.is-current::after {
-      background-color: var(--color-light);
-    }
+        .quotes-button.is-current::after {
+          background-color: var(--color-text);
+        }
 
-    .quotes-button:not(.is-current):hover::after {
-      border-color: var(--color-light-gray);
+        .quotes-button:not(.is-current):hover::after {
+          border-color: grey;
+        }
+      }
     }
+  }
+  .quotes-image{
+    max-width:959px;
+    max-height:878px;
+    width:45vw;
+    min-height: 250px;
   }
 }

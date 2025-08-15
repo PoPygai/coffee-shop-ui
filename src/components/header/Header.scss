@@ -52,7 +52,7 @@
         background: url("/public/icons/line.png")center no-repeat;
       }
       &:hover::after{
-        transition-duration: 0.3s;
+        transition-duration: var(--transition-duration);
         top: 70%;
       }
       @media (max-width: 510px) {
