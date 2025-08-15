@@ -7,11 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+todo.txt
 node_modules
 dist
 dist-ssr
 *.local
-todo.txt
+
 
 # Editor directories and files
 .vscode/*
