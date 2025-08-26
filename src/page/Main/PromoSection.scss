@@ -54,7 +54,7 @@
     .enjoy-title{
       &::after{
         top: -43%;
-        right: -19%;
+        right: -16%;
       }
     }
   }
@@ -63,7 +63,7 @@
   }
 }
 
-.product{
+.sweetness{
   max-height:583px;
   display: flex;
   background-color: var(--alternative-bg-color);
@@ -77,65 +77,22 @@
     flex-direction: column;
     align-items: start;
 
-    .product-title{
+    .sweetness-title{
       font-size: clamp(12px,2.6vw,50px);
       line-height: 1.2;
       letter-spacing: 1px;
       margin-bottom: 1.1vw;
     }
-    .product-description{
+    .sweetness-description{
       font-family: SpaceMono,sans-serif;
       font-size: clamp(8px,0.9vw,18px);
       line-height: 1.33;
       margin-bottom: 5.94vw;
     }
   }
-
-  .product-catalog{
-    .catalog-list{
-      display: flex;
-      height: 100%;
-
-
-      .catalog-item{
-        display: flex;
-        padding: 2.23vw;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        max-height:583px ;
-        height: 100%;
-        max-width: 480px;
-        border: var(--border);
-        border-top: none;
-        border-bottom: none;
-
-        &:first-child{
-          border-right: none !important;
-        }
-
-        &-img{
-          margin-inline:auto ;
-        }
-        &-title{
-          font-size: clamp(12px,1.3vw,25px);
-          line-height: 1.2;
-          letter-spacing: 0.5px;
-          margin-bottom: 5px;
-        }
-        &-cost{
-          font-family: SpaceMono,sans-serif;
-          font-size: clamp(10px,0.9vw,18px);
-          line-height: 1.33;
-        }
-
-
-      }
-    }
-  }
-
-
 }
+
+
 
 .alert{
   max-height:753px;
@@ -161,6 +118,7 @@
   text-align: center;
   justify-content: space-between;
   .quotes-body{
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 3.12vw;
@@ -171,7 +129,7 @@
       letter-spacing: 0.7px;
       text-align: center;
     }
-    .quotes-owners{
+    .quotes-author{
       font-family: SpaceMono,sans-serif;
       font-size: clamp(10px,0.93vw, 18px );
       line-height: 1.33;

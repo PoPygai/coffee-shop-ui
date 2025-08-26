@@ -3,12 +3,38 @@
     {
       "name" : "Arabica Bekele",
       "img": "/public/images/products/arabica.png",
-      "cost": "40.00$"
+      "cost": "40.00$",
+      "status": ""
     },
     {
       "name" : "Robusta Santa",
       "img": "/public/images/products/robusta.png",
-      "cost": "35.00$"
+      "cost": "35.00$",
+      "status": ""
+    },
+    {
+      "name" : "French Roast",
+      "img": "/public/images/products/french-roast.png",
+      "cost": "37.00$",
+      "status": ""
+    },
+    {
+      "name" : "Decaf Espresso",
+      "img": "/public/images/products/decaf-espresso.png",
+      "cost": "41.00$",
+      "status": "new"
+    },
+    {
+      "name" : "Costa Rica",
+      "img": "/public/images/products/costa-rica.png",
+      "cost": "36.00$",
+      "status": ""
+    },
+    {
+      "name" : "Decaf French Roast",
+      "img": "/public/images/products/decaf-french-roast.png",
+      "cost": "45.00$",
+      "status": "sold"
     }
   ]
 }

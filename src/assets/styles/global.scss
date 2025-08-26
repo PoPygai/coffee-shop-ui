@@ -30,6 +30,11 @@ a{
   text-decoration: none;
   color: inherit;
 }
+address{
+  font-style: normal;
+}
+
+
 .more-info{
   position: relative;
   font-family: Anton,sans-serif;
@@ -50,5 +55,61 @@ a{
   }
   &:hover{
     text-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+  }
+}
+
+.button{
+  font-family: Anton,sans-serif;
+  font-size: clamp(10px,0.88vw,17px);
+  line-height: 1;
+  letter-spacing: 1.36px;
+  text-align: center;
+  color: var(--color-light);
+  padding: 21px 35px;
+  border: none;
+  text-transform: uppercase;
+  background:var(--color-text) url("/public/icons/button-shape.png") center no-repeat;
+
+  &:hover{
+    background-color: var(--color-grey);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+  }
+}
+
+.product-list{
+  display: flex;
+  .product-item{
+    display: flex;
+    padding: 2.23vw;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    max-height:583px ;
+    height: 100%;
+    max-width: 480px;
+    border-right: var(--border);
+    border-top: none;
+    border-bottom: none;
+
+    &:first-child{
+      border-left: var(--border);
+    }
+
+    &-img{
+      margin-inline:auto ;
+    }
+    &-title{
+      font-size: clamp(12px,1.3vw,25px);
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+    &-cost{
+      font-family: SpaceMono,sans-serif;
+      font-size: clamp(10px,0.9vw,18px);
+      line-height: 1.33;
+    }
+
+
   }
 }
