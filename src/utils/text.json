@@ -1,4 +1,22 @@
 {
   "header-nav-list": ["Home","Pages","Shop","Blog"],
-  "header-nav-list-additional": ["cart","search"]
+  "header-nav-list-additional": ["cart","search"],
+  "menu-list": [
+    {
+      "title": "Delivery",
+      "description": "Vivamus hendrerit at sapien nec mattis. Quisque quis arcu"
+    },
+    {
+      "title": "Wholesale",
+      "description": "Pellentesque in tempor lorem, vel porttitor est."
+    },
+    {
+      "title": "Consistency",
+      "description": "Aliquam ut arcu sodales, gravida quam vitae."
+    },
+    {
+      "title": "Quality",
+      "description": "Nam at sapien ligula. Morbi maximus scelerisque mi sed."
+    }
+  ]
 }

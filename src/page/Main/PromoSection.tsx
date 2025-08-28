@@ -23,7 +23,7 @@ const PromoSection = () => {
             <section className="sweetness">
                 <div className="sweetness-info">
                     <h3 className="sweetness-title">Our blends deliver on the promise of <br/> balance and
-                        consistency,<span>roasted to</span> <br/> maximize sweetness.</h3>
+                        consistency,<span className={"text-with-effect"}>roasted to</span> <br/> maximize sweetness.</h3>
                     {/*todo*/}
                     <p className="sweetness-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Ut <br/> elit tellus, luctus nec ullamcorper.</p>

@@ -100,10 +100,10 @@
 
 
   &-title {
-    font-size: 70px;
+    font-size: clamp(28px,3.64vw,70px);
     line-height: 1.14;
     letter-spacing: -1.4px;
-    padding: 39px 50px;
+    padding: 2vw 2.6vw;
   }
 
   .product-slider{
@@ -129,4 +129,65 @@
   .next { right: 0; }
 
 
+}
+
+.services{
+  display: flex;
+  background-color:  var(--alternative-bg-color);
+  min-width: 100vw;
+
+  &-aside{
+    width: 40%;
+    padding: 2.6vw;
+    border-right: var(--border);
+
+    .services-title{
+      font-size: clamp(20px,3.64vw,70px);
+      line-height: 1.14;
+      letter-spacing: -1.4px;
+      color: #202020;
+      margin-bottom: 11.64vw;
+
+      span{
+        background: url("/public/icons/highlight.png")  no-repeat;
+        background-size: 100%;
+        
+        @media (max-width: 356px) {
+          background: none;
+        }
+      }
+    }
+    .services-image{
+      width: clamp(90px,16.4vw,315px);
+      max-height: 237px;
+
+    }
+  }
+  &-skills-list{
+    width: 60%;
+    .skills-item{
+      display: flex;
+      height: calc(100% /4);
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 2.39vw 3.33vw 2.39vw  3.03vw;
+
+      &-title {
+        font-size: clamp(14px,1.82vw,35px);
+        letter-spacing: 0.7px;
+        margin-bottom: 6px;
+      }
+      &-description{
+        max-width: 320px;
+        font-family: SpaceMono,sans-serif;
+        font-size: clamp(8px,0.93vw,18px);
+        line-height: 1.33;
+      }
+
+      &:not(:last-child){
+        border-bottom: var(--border);
+      }
+    }
+  }
 }

@@ -1,41 +1,40 @@
 import "./Catalog.scss";
 import {ASIDE_LIST} from "../../utils/constant.ts";
 import products from "../../utils/products.json";
-import {useEffect, useState} from "react";
+import text from "../../utils/text.json";
+import { useEffect, useState} from "react";
 
 const Catalog = () => {
     const productsArray = products.products;
 
-    const visibleCount = 4; // сколько карточек показываем одновременно
+    const [visibleCount,setVisibleCount] = useState(4);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const itemValues =  text["menu-list"];
 
+    console.log(itemValues);
     const nextSlider = () => {
         setCurrentIndex((prev) =>
             prev + visibleCount >= productsArray.length ? 0 : prev + 1
         );
     };
-
     const backSlider = () => {
         setCurrentIndex((prev) =>
             prev === 0 ? productsArray.length -1  : prev - 1
         );
     };
-    useEffect(() => {
-        console.log(currentIndex)
-        console.log(visibleProducts)
-    },[currentIndex])
-
     const visibleProducts = productsArray.slice(
         currentIndex,
         currentIndex + visibleCount
     );
-
-
     if (visibleProducts.length < visibleCount) {
         visibleProducts.push(
             ...productsArray.slice(0, visibleCount - visibleProducts.length)
         );
     }
+
+    useEffect(() => {
+        if(screen.width < 450) setVisibleCount(2);
+    }, []);
 
 
     return (
@@ -87,6 +86,9 @@ const Catalog = () => {
                                 <img className="product-item-img" src={item.img} alt={item.name} />
                                 <h4 className="product-item-title">{item.name}</h4>
                                 <p className="product-item-cost">{item.cost}</p>
+                                {
+                                    item.status !== "" ? <h4 className={`${item.status}-product`}>{item.status}</h4> : null
+                                }
                             </li>
                         ))}
                     </ul>
@@ -99,7 +101,26 @@ const Catalog = () => {
                     </button>
                 </div>
             </section>
-            <section className="possibilities"></section>
+            <section className="services">
+                <div className="services-aside">
+                    <h2 className="services-title ">Swing by our place <br/> we <span >also have food</span> </h2>
+                    <img className="services-image" src="/public/images/buns.png" alt="buns" loading={"lazy"}/>
+                </div>
+                <ul className="services-skills-list">
+                    {
+                        itemValues.map((item,i) => {
+                            return <li className="skills-item" key={i}>
+                                <div className="skills-item-info">
+                                    <h4 className="skills-item-title">{item.title}</h4>
+                                    <p className={"skills-item-description"}>{item.description}</p>
+                                </div>
+                                <button className="skills-item-button more-info">view more</button>
+                            </li>
+                        })
+                    }
+                </ul>
+
+            </section>
 
 
         </>
