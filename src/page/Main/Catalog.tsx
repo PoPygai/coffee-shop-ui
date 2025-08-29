@@ -5,7 +5,7 @@ import text from "../../utils/text.json";
 import { useEffect, useState} from "react";
 
 const Catalog = () => {
-    const productsArray = products.products;
+
 
     const [visibleCount,setVisibleCount] = useState(4);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,21 +14,21 @@ const Catalog = () => {
     console.log(itemValues);
     const nextSlider = () => {
         setCurrentIndex((prev) =>
-            prev + visibleCount >= productsArray.length ? 0 : prev + 1
+            prev + visibleCount >= products.length ? 0 : prev + 1
         );
     };
     const backSlider = () => {
         setCurrentIndex((prev) =>
-            prev === 0 ? productsArray.length -1  : prev - 1
+            prev === 0 ? products.length -1  : prev - 1
         );
     };
-    const visibleProducts = productsArray.slice(
+    const visibleProducts = products.slice(
         currentIndex,
         currentIndex + visibleCount
     );
     if (visibleProducts.length < visibleCount) {
         visibleProducts.push(
-            ...productsArray.slice(0, visibleCount - visibleProducts.length)
+            ...products.slice(0, visibleCount - visibleProducts.length)
         );
     }
 
@@ -77,15 +77,15 @@ const Catalog = () => {
                 </div>
             </section>
             <section className="catalog">
-                <h2 className="catalog-title">The Coffee that's right for you</h2>
+                <h2 className="catalog-title title-big">The Coffee that's right for you</h2>
 
                 <div className="product-slider">
-                    <ul className="catalog-list product-list">
+                    <ul className="catalog-list list">
                         {visibleProducts.map((item, index) => (
-                            <li key={index} className="product-item">
-                                <img className="product-item-img" src={item.img} alt={item.name} />
-                                <h4 className="product-item-title">{item.name}</h4>
-                                <p className="product-item-cost">{item.cost}</p>
+                            <li key={index} className="list-item">
+                                <img className="list-item-img" src={item.img} alt={item.name} loading={"lazy"}/>
+                                <h4 className="list-item-title">{item.name}</h4>
+                                <p className="list-item-subtitle">{item.cost}</p>
                                 {
                                     item.status !== "" ? <h4 className={`${item.status}-product`}>{item.status}</h4> : null
                                 }
@@ -121,8 +121,6 @@ const Catalog = () => {
                 </ul>
 
             </section>
-
-
         </>
     );
 };

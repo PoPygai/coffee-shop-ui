@@ -1,5 +1,4 @@
-{
-  "products": [
+[
     {
       "name" : "Arabica Bekele",
       "img": "/public/images/products/arabica.png",
@@ -37,4 +36,3 @@
       "status": "sold"
     }
   ]
-}

@@ -99,12 +99,7 @@
 .catalog{
 
 
-  &-title {
-    font-size: clamp(28px,3.64vw,70px);
-    line-height: 1.14;
-    letter-spacing: -1.4px;
-    padding: 2vw 2.6vw;
-  }
+
 
   .product-slider{
     position: relative;
@@ -135,6 +130,7 @@
   display: flex;
   background-color:  var(--alternative-bg-color);
   min-width: 100vw;
+  border-bottom: var(--border);
 
   &-aside{
     width: 40%;

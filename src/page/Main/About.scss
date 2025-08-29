@@ -1,0 +1,19 @@
+.team{
+  &-title{
+    //border: var(--border);
+  }
+
+
+  .team-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: var(--border);
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+  }
+  .team-item{
+    border-bottom: var(--border) !important;
+  }
+}

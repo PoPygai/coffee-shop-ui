@@ -80,10 +80,10 @@ address{
   }
 }
 
-.product-list{
+.list{
   display: flex;
 
-  .product-item{
+  .list-item{
     position: relative;
     display: flex;
     padding: 2.23vw;
@@ -103,6 +103,8 @@ address{
 
     &-img{
       margin-inline:auto ;
+      margin-bottom: 15px;
+
     }
     &-title{
       font-size: clamp(12px,1.3vw,25px);
@@ -110,7 +112,7 @@ address{
       letter-spacing: 0.5px;
       margin-bottom: 5px;
     }
-    &-cost {
+    &-subtitle {
       font-family: SpaceMono, sans-serif;
       font-size: clamp(10px, 0.9vw, 18px);
       line-height: 1.33;
@@ -140,7 +142,15 @@ address{
 }
 
 .text-with-effect{
-
+//todo
     background: url("/public/icons/highlight.png") right no-repeat;
 
+}
+
+
+.title-big{
+  font-size: clamp(28px,3.64vw,70px);
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+  padding: 2vw 2.6vw;
 }

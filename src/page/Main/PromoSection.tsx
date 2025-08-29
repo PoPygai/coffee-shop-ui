@@ -3,7 +3,7 @@ import products from "../../utils/products.json";
 import {useRef, useState} from "react";
 import {COFFEE_QUOTES} from "../../utils/constant.ts";
 const PromoSection = () => {
-    const productsArray =products.products.slice(0,2)
+    const productsArray =products.slice(0,2)
     const [indexQuotes, setIndexQuotes] = useState(0);
     const refQuotes = useRef<HTMLUListElement | null>(null);
 
@@ -29,13 +29,13 @@ const PromoSection = () => {
                         Ut <br/> elit tellus, luctus nec ullamcorper.</p>
                     <button className="sweetness-button more-info">View More</button>
                 </div>
-                <ul className="sweetness-list product-list">
+                <ul className="sweetness-list list">
                     {
                         productsArray.map((item, index) =>
-                            <li key={index} className="product-item">
-                                <img className="product-item-img" src={item.img} alt="photo of product"/>
-                                <h4 className="product-item-title">{item.name}</h4>
-                                <p className="product-item-cost">{item.cost}</p>
+                            <li key={index} className="list-item">
+                                <img className="list-item-img" src={item.img} alt="photo of product" loading={"lazy"}/>
+                                <h4 className="list-item-title">{item.name}</h4>
+                                <p className="list-item-subtitle">{item.cost}</p>
                             </li>
                         )
                     }
