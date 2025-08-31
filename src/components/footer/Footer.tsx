@@ -3,10 +3,11 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-wrapper">
-                <img className="footer-logo" src="" alt="logo "/>
+                <img className="footer-logo" src="/public/images/logo-footer.png" alt="logo " loading={"lazy"}/>
                 <nav className="footer-menu">
                     <ul className="footer-list">
                         <li className="footer-item">
+                            <h3 className="footer-item__title">Early Birds</h3>
                             <address className="under-line"> Weteringstraat 48,1017 SP</address>
                             <address className="under-line" >Amsterdam</address>
                             <a  className="under-line" href="tel::020-7718364">Tel : 020-7718364</a>

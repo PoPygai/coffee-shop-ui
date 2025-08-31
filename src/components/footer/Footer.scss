@@ -1,0 +1,46 @@
+.footer{
+  address , a{
+    position: relative;
+    font-family: SpaceMono,sans-serif;
+    font-size: clamp(8px ,0.83vw,16px);
+    line-height: 1.75;
+  }
+  .under-line::after{
+    top: 90% !important;
+  }
+  border-top: var(--border);
+
+  &-wrapper{
+    padding: 3.48vw 3.64px ;
+    display: flex;
+    align-items: start;
+    column-gap: 1.87vw;
+
+    .footer-logo{
+      max-width: 103px;
+      width: 5.36vw;
+      min-width: 50px;
+      aspect-ratio: 1;
+    }
+
+    .footer-menu{
+      width: 1500px;
+
+      .footer-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+
+        .footer-item{
+          
+          &__title{
+            font-size: clamp(16px,1.56vw , 30px);
+            line-height: 1.29;
+            letter-spacing: 0.6px;
+          }
+        }
+      }
+    }
+  }
+}
