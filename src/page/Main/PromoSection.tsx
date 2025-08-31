@@ -27,7 +27,7 @@ const PromoSection = () => {
                     {/*todo*/}
                     <p className="sweetness-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Ut <br/> elit tellus, luctus nec ullamcorper.</p>
-                    <button className="sweetness-button more-info">View More</button>
+                    <a href="#" target={"_blank"}  className="sweetness-button more-info">View More</a>
                 </div>
                 <ul className="sweetness-list list">
                     {

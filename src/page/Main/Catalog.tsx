@@ -114,7 +114,7 @@ const Catalog = () => {
                                     <h4 className="skills-item-title">{item.title}</h4>
                                     <p className={"skills-item-description"}>{item.description}</p>
                                 </div>
-                                <button className="skills-item-button more-info">view more</button>
+                                <a href="#" target={"_blank"} className="skills-item-button more-info">view more</a>
                             </li>
                         })
                     }

@@ -17,7 +17,7 @@ const Header = () => {
                     {
                         listInfo.map((item, index) => (
                             <li key={index} className="list-item">
-                                <a className="list-item-link" href="#">{item}</a>
+                                <a className="list-item-link under-line" href="#">{item}</a>
                             </li>
                         ))
                     }

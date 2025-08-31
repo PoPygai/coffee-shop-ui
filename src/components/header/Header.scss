@@ -41,16 +41,7 @@
       align-items: center;
       position: relative;
 
-      &::after{
-        content: "";
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* смещаем центр */
-        width: clamp(40px , 3.3vw , 65px);
-        height: 6px;
-        background: url("/public/icons/line.png")center no-repeat;
-      }
+
       &:hover::after{
         transition-duration: var(--transition-duration);
         top: 70%;

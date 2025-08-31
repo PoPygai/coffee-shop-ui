@@ -1,9 +1,4 @@
 .team{
-  &-title{
-    //border: var(--border);
-  }
-
-
   .team-list{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -15,5 +10,110 @@
   }
   .team-item{
     border-bottom: var(--border) !important;
+  }
+}
+
+.blog{
+  min-width: 100vw;
+  display: flex;
+
+
+  &-aside{
+    width: 40%;
+    padding: 3.38vw 3.12vw;
+    border-right:  var(--border);
+
+    .blog-title{
+      padding: 0 !important;
+      margin-bottom: 32.44vw;
+    }
+
+  }
+
+  &-list{
+    width: 60%;
+
+    .blog-item{
+      position: relative;
+      display: flex;
+      column-gap: 2.29vw;
+      padding: 2.25vw 3.02vw;
+
+      &__img{
+        max-height: 292.4px;
+        width: clamp(130px,22.65vw,435.9px);
+      }
+
+
+      .blog-item-content{
+        padding-block: 0.98vw;
+        .blog-date{
+          position: relative;
+          font-family: SpaceMono,sans-serif;
+          font-size: clamp(10px,0.93vw,18px);
+          line-height: 1.33;
+          margin-bottom: 10px;
+        }
+        .under-line::after{
+          top: 100%!important;
+        }
+
+
+        .blog-item-title{
+          max-width: 370px;
+          font-size: clamp(14px,1.82vw,35px);
+          line-height: 1.29;
+          letter-spacing: 0.7px;
+          margin-bottom: 5.85vw;
+        }
+      }
+
+      &:not(:last-child){
+        border-bottom: var(--border);
+      }
+    }
+
+  }
+
+  @media (max-width: 600px) {
+    flex-direction:  column;
+    &-aside,  &-list{
+      width: 100%;
+    }
+    &-aside{
+      border-bottom: var(--border);
+    }
+  }
+}
+
+.courses{
+  border-top: var(--border);
+  border-bottom: var(--border);
+  background-color: #c5d6d1;
+
+  &-container{
+    padding: 7.13vw 6.25vw;
+    display: flex;
+    column-gap: 6.97vw;
+    align-items: center;
+
+    .courses-img{
+      max-width: 1133px;
+      max-height: 650px;
+      width: 59.01vw;
+    }
+
+    .courses-title{
+      font-size:clamp( 20px,1.82vw,35px);
+      line-height: 1.29;
+      letter-spacing: 0.7px;
+      margin-bottom: 12px;
+    }
+    .courses-description{
+      font-family: SpaceMono,sans-serif;
+      font-size: clamp(10px,0.93vw,18px);
+      line-height: 1.33;
+      margin-bottom: 3vw;
+    }
   }
 }
