@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "/public/images/supplies/good-coffe.png",
+    "compony" : "good coffe"
+  },
+  {
+    "logo": "/public/images/supplies/perfect-foods.png",
+    "compony" : "Perfect food"
+  },
+  {
+    "logo": "/public/images/supplies/funny-farm.png",
+    "compony" : "funny farm"
+  },
+  {
+    "logo": "/public/images/supplies/phily-lily.png",
+    "compony" : "Phily Lily"
+  },
+  {
+    "logo": "/public/images/supplies/king-drink.png",
+    "compony" : "king $ drink"
+  }
+]

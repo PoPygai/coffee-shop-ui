@@ -1,6 +1,7 @@
 import PromoSection from "./PromoSection.tsx";
 import Catalog from "./Catalog.tsx";
 import About from "./About.tsx";
+import InfoOfShop from "./InfoOfShop.tsx";
 
 const Main = () => {
     return (
@@ -8,6 +9,7 @@ const Main = () => {
             <PromoSection/>
             <Catalog/>
             <About/>
+            <InfoOfShop/>
         </>
     );
 };

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Caffe Latte",
+    "subtitle": "Fresh brewed coffee",
+    "cost": "5.00$"
+  },
+  {
+    "title": "Cappuccino",
+    "subtitle": "Espresso and milk",
+    "cost": "7.00$"
+  },
+  {
+    "title": "Ice Coffe",
+    "subtitle": "Cold brewed espresso",
+    "cost": "4.00$"
+  },
+  {
+    "title": "Mocha",
+    "subtitle": "Espresso, mocha sauce, milk",
+    "cost": "7.00$"
+  },
+  {
+    "title": "Espresso",
+    "subtitle": "Rich espresso with milk",
+    "cost": "4.00$"
+  },
+  {
+    "title": "Caffe Latte",
+    "subtitle": "Fresh brewed coffee",
+    "cost": "5.00$"
+  },
+  {
+    "title": "Cappuccino",
+    "subtitle": "Espresso and milk",
+    "cost": "7.00$"
+  },
+  {
+    "title": "Ice Coffe",
+    "subtitle": "Cold brewed espresso",
+    "cost": "4.00$"
+  },
+  {
+    "title": "Mocha",
+    "subtitle": "Espresso, mocha sauce, milk",
+    "cost": "7.00$"
+  },
+  {
+    "title": "Espresso",
+    "subtitle": "Rich espresso with milk",
+    "cost": "4.00$"
+  }
+]

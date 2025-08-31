@@ -1,0 +1,120 @@
+.supplies{
+  &-list{
+    display: flex;
+    border: var(--border);
+
+    .supplies-item{
+      width: calc(100% / 5 );
+      aspect-ratio: 1;
+      position: relative;
+
+      &__img{
+        position:  absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-inline: 5px;
+      }
+
+      &:not(:last-child){
+        border-right: var(--border);
+      }
+    }
+  }
+}
+
+.menu{
+  border-bottom: var(--border);
+  display: flex;
+
+  &-title{
+    display: none;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    &::after{
+      //todo
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 160px;
+      height: 40px;
+      background: url("/public/icons/highlight.png")center/ cover  no-repeat;
+    }
+  }
+
+  &-list{
+    padding: 8.02vw 8.85vw;
+    width: 50%;
+    border-right:  var(--border);
+
+    .menu-item{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr;
+      margin-bottom: 21px;
+
+      &__title{
+        font-size: clamp(14px,1.04vw,20px);
+        line-height: 1.25;
+        letter-spacing: 0.8px;
+      }
+      &__subtitle{
+        font-family: SpaceMono,sans-serif;
+        font-size: clamp(12px,0.93vw,18px);
+        line-height: 1.33;
+      }
+
+
+      &__cost{
+        text-align: right;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+
+        font-family: SpaceMono,sans-serif;
+        font-size: clamp(12px,0.93vw,18px);
+        line-height: 1.33;
+        letter-spacing: 0.72px;
+      }
+    }
+
+  }
+  .menu-image-wrapper {
+    position: relative;
+    width: 50%;
+  }
+
+  .menu-image-wrapper img {
+    width: 50vw;
+    height: 100%;
+  }
+
+  .menu-image-wrapper::before {
+    content: attr(data-image);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Mansalva, sans-serif;
+    font-size: clamp(36px, 5.72vw, 110px);
+    line-height: 0.68;
+    letter-spacing: -4px;
+    color: #fbed81;
+  }
+  @media (max-width: 900px) {
+    display: block;
+    &-title{
+      display: block;
+    }
+    .menu-image-wrapper{
+      display: none
+    }
+    &-list{
+      width: 100%;
+      border-right:  none;
+    }
+  }
+}
