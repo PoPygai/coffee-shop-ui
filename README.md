@@ -27,7 +27,7 @@ Vite / Create React App – for fast development (depending on setup)
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/coffee-shop.git
+git clone https://github.com/PoPygai/coffee-shop-ui
 cd coffee-shop
 npm install
 npm run dev
