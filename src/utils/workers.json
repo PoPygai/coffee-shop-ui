@@ -1,31 +1,31 @@
 [
   {
-    "img": "/public/images/workers/uma-clark.png",
+    "img": "/images/workers/uma-clark.png",
     "name": "Uma Clark",
     "status": "Manager"
   },
   {
-    "img": "/public/images/workers/tom-splinder.png",
+    "img": "/images/workers/tom-splinder.png",
     "name": "Tom Splinoer",
     "status": "Manager"
   },
   {
-    "img": "/public/images/workers/johas-hanks.png",
+    "img": "/images/workers/johas-hanks.png",
     "name": "Johas Hanks",
     "status": "Pastry Chef"
   },
   {
-    "img": "/public/images/workers/laura-simons.png",
+    "img": "/images/workers/laura-simons.png",
     "name": "Laura Simons",
     "status": "Media manager"
   },
   {
-    "img": "/public/images/workers/ed-morris.png",
+    "img": "/images/workers/ed-morris.png",
     "name": "Ed Morris",
     "status": "Chef"
   },
   {
-    "img": "/public/images/workers/rita-flams.png",
+    "img": "/images/workers/rita-flams.png",
     "name": "Rita Flams",
     "status": "Sales person"
   }
