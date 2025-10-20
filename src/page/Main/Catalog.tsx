@@ -50,7 +50,7 @@ const Catalog = () => {
                     }
                 </ul>
                 <div className="contact-body">
-                    <img src="/images/main-home.jpg.png" alt="coffee" className="contact-body-image"/>
+                    <img src="/coffee-shop-ui/images/main-home.jpg.png" alt="coffee" className="contact-body-image"/>
                     <div className="contact-body-info">
                         <h4 className="contact-title">Amsterdam Centre Coffee</h4>
 

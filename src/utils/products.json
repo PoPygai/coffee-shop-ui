@@ -1,37 +1,37 @@
 [
     {
       "name" : "Arabica Bekele",
-      "img": "/images/products/arabica.png",
+      "img": "/coffee-shop-ui/images/products/arabica.png",
       "cost": "40.00$",
       "status": ""
     },
     {
       "name" : "Robusta Santa",
-      "img": "/images/products/robusta.png",
+      "img": "/coffee-shop-ui/images/products/robusta.png",
       "cost": "35.00$",
       "status": ""
     },
     {
       "name" : "French Roast",
-      "img": "/images/products/french-roast.png",
+      "img": "/coffee-shop-ui/images/products/french-roast.png",
       "cost": "37.00$",
       "status": ""
     },
     {
       "name" : "Decaf Espresso",
-      "img": "/images/products/decaf-espresso.png",
+      "img": "/coffee-shop-ui/images/products/decaf-espresso.png",
       "cost": "41.00$",
       "status": "new"
     },
     {
       "name" : "Costa Rica",
-      "img": "/images/products/costa-rica.png",
+      "img": "/coffee-shop-ui/images/products/costa-rica.png",
       "cost": "36.00$",
       "status": ""
     },
     {
       "name" : "Decaf French Roast",
-      "img": "/images/products/decaf-french-roast.png",
+      "img": "/coffee-shop-ui/images/products/decaf-french-roast.png",
       "cost": "45.00$",
       "status": "sold"
     }

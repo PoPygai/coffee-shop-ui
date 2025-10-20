@@ -1,22 +1,22 @@
 [
   {
-    "logo": "/images/supplies/good-coffe.png",
+    "logo": "/coffee-shop-ui/images/supplies/good-coffe.png",
     "compony" : "good coffe"
   },
   {
-    "logo": "/images/supplies/perfect-foods.png",
+    "logo": "/coffee-shop-ui/images/supplies/perfect-foods.png",
     "compony" : "Perfect food"
   },
   {
-    "logo": "/images/supplies/funny-farm.png",
+    "logo": "/coffee-shop-ui/images/supplies/funny-farm.png",
     "compony" : "funny farm"
   },
   {
-    "logo": "/images/supplies/phily-lily.png",
+    "logo": "/coffee-shop-ui/images/supplies/phily-lily.png",
     "compony" : "Phily Lily"
   },
   {
-    "logo": "/images/supplies/king-drink.png",
+    "logo": "/coffee-shop-ui/images/supplies/king-drink.png",
     "compony" : "king $ drink"
   }
 ]

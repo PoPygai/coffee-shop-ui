@@ -31,7 +31,7 @@ const InfoOfShop = () => {
                     }
                 </ul>
                 <div className="menu-image-wrapper" data-image="Our Coffee">
-                    <img className="menu-image" src="/images/image-in-menu.jpg" alt="women with coffee" loading="lazy"/>
+                    <img className="menu-image" src="/coffee-shop-ui/images/image-in-menu.jpg" alt="women with coffee" loading="lazy"/>
                 </div>
             </section>
             {/*todo*/}

@@ -1,31 +1,31 @@
 [
   {
-    "img": "/images/workers/uma-clark.png",
+    "img": "/coffee-shop-ui/images/workers/uma-clark.png",
     "name": "Uma Clark",
     "status": "Manager"
   },
   {
-    "img": "/images/workers/tom-splinder.png",
+    "img": "/coffee-shop-ui/images/workers/tom-splinder.png",
     "name": "Tom Splinoer",
     "status": "Manager"
   },
   {
-    "img": "/images/workers/johas-hanks.png",
+    "img": "/coffee-shop-ui/images/workers/johas-hanks.png",
     "name": "Johas Hanks",
     "status": "Pastry Chef"
   },
   {
-    "img": "/images/workers/laura-simons.png",
+    "img": "/coffee-shop-ui/images/workers/laura-simons.png",
     "name": "Laura Simons",
     "status": "Media manager"
   },
   {
-    "img": "/images/workers/ed-morris.png",
+    "img": "/coffee-shop-ui/images/workers/ed-morris.png",
     "name": "Ed Morris",
     "status": "Chef"
   },
   {
-    "img": "/images/workers/rita-flams.png",
+    "img": "/coffee-shop-ui/images/workers/rita-flams.png",
     "name": "Rita Flams",
     "status": "Sales person"
   }
