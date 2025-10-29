@@ -45,7 +45,7 @@ const About = () => {
             </section>
             <section className="courses">
                 <div className="courses-container">
-                    <img src="/images/barists.png" alt="two barists" className="courses-img" loading={"lazy"}/>
+                    <img src="/coffee-shop-ui/images/barists.png" alt="two barists" className="courses-img" loading={"lazy"}/>
                     <div className="courses-body">
                         <h3 className="courses-title">Barista Schools & Careers</h3>
                         <p className="courses-description">  We host courses covering everything from simple home brewing techniques to advanced latte art to allow you to learn the essential life skill of how to make truly great coffee.</p>

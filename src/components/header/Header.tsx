@@ -24,7 +24,7 @@ const Header = () => {
                 </ul>
 
                 <div className={"nav-logo"}>
-                    <img className="nav-logo__img" src={"/public/images/logo-black-1.png.png"} alt={"logo"}
+                    <img className="nav-logo__img" src={"/coffee-shop-ui/images/logo-black-1.png.png"} alt={"logo"}
                          width={166} height={38} loading={"lazy"}/>
                 </div>
 

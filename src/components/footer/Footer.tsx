@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-wrapper">
-                <img className="footer-logo" src="/public/images/logo-footer.png" alt="logo " loading={"lazy"}/>
+                <img className="footer-logo" src="/coffee-shop-ui/images/logo-footer.png" alt="logo " loading={"lazy"}/>
                 <nav className="footer-menu">
                     <ul className="footer-list">
                         <li className="footer-item">

@@ -104,7 +104,7 @@ const Catalog = () => {
             <section className="services">
                 <div className="services-aside">
                     <h2 className="services-title ">Swing by our place <br/> we <span >also have food</span> </h2>
-                    <img className="services-image" src="/public/images/buns.png" alt="buns" loading={"lazy"}/>
+                    <img className="services-image" src="/coffee-shop-ui/images/buns.png" alt="buns" loading={"lazy"}/>
                 </div>
                 <ul className="services-skills-list">
                     {
